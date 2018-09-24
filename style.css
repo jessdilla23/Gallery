@@ -29,7 +29,7 @@
 /* Remember our div class of caption? this is where the magic happens*/
 .caption {
   color: #ffffff;
-  font-size: 15px;
+  font-size: 35px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
