@@ -1,5 +1,5 @@
-var slideshow = ["photos"];
-var slideIndex = 1;
+var slides = $(".photos")
+var slideIndex = 0;
 showDivs(slideIndex);
 
 function plusDivs(n) {
