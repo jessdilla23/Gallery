@@ -1,15 +1,15 @@
-var slideIndex = 0;
+var slideIndex = 1;
 showDivs(slideIndex);
 
-function plusDivs(1) {
+function plusDivs(n) {
     showDivs(slideIndex = 0);
 }
 
 function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("photos");
-    if (1 > x.length) {slideIndex = 1} 
-    if (x < 1) {slideIndex = x.length} ;
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none"; 
     }
