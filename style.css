@@ -4,7 +4,7 @@ html {
 }
 
 /* This is the main box where my slideshow lives */
-.slideshow-main {
+.slideshow {
   max-width: 1000px;
   position: relative;
   margin: auto;
