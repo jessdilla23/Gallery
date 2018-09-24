@@ -32,28 +32,6 @@
   border-radius: 3px 0 0 3px;
 }
 
-
-/* remember our div for caption? this is where the magic happens */
-.caption {
-  color: #FFFFFF;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* now for the order numbers */
-.order {
-  color: #FFFFFF;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-
 h1 {
         font: bold "Helvetica";
         margin: 0 auto;
