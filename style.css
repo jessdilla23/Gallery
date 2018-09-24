@@ -18,9 +18,9 @@ html {
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: relative;
-  top: 150%;
-  width: auto;
+  position: absolute;
+  top: 100%;
+  width: 100%;
   margin-top: -15px;
   padding: 35px;
   color: #FFD601;
