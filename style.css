@@ -2,8 +2,8 @@
 /* This is the main box where my slideshow lives */
 .slideshow-main {
   max-width: 1000px;
-  position: relative;
-  margin: auto;
+  position: center;
+  margin: 0 auto;
 }
 
 /* This will hide my images by default */
