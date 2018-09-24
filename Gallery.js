@@ -1,17 +1,9 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+var slides = $(".slideshow-main");
+var slideIndex = 0;
+var currentSlide = slides[slideIndex];
 
-function plusDivs(n) {
-    showDivs(slideIndex = 0);
-}
-
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("photos");
-    if (n > x.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
-    }
-    x[slideIndex-1].style.display = "block"; 
+function nextSlide() {
+    slides[currentSlide].photos = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].photos = 'slide showing';
 }
