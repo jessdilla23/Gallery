@@ -1,3 +1,11 @@
+title {
+        font: bold "Helvetica";
+}
+
+p {
+    font: "Helvetica";
+}
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
