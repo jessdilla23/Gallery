@@ -1,4 +1,4 @@
-var slides = $(".photos")
+var slides = $(".slideshow-main")
 var slideIndex = 0;
 showDivs(slideIndex);
 
