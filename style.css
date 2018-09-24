@@ -2,8 +2,8 @@
 /* This is the main box where my slideshow lives */
 .slideshow-main {
   max-width: 1000px;
-  position: center;
-  margin: 0 auto;
+  position: relative;
+  margin: auto;
 }
 
 /* This will hide my images by default */
@@ -40,7 +40,7 @@
 /* Now for the order numbers*/
 .order {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
