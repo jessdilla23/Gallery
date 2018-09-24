@@ -94,11 +94,12 @@
 }
 
 h1 {
-        font: bold "Helvetica";
+        font: bold Helvetica;
         margin: 0 auto;
         text-align: center;
 }
 
 p {
-    font: "Helvetica";
+    font: Helvetica;
+    text-align: center;
 }
