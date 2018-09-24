@@ -1,36 +1,14 @@
-$(document).ready(function() {
-  $('#previous').on('click', function(){
-    // Change to the previous image
-    $('#im_' + currentImage).stop().fadeOut(1);
-    decreaseImage();
-    $('#im_' + currentImage).stop().fadeIn(1);
-  }); 
-  $('#next').on('click', function(){
-    // Change to the next image
-    $('#im_' + currentImage).stop().fadeOut(1);
-    increaseImage();
-    $('#im_' + currentImage).stop().fadeIn(1);
-  }); 
+var slideIndex = 0;
+showSlides();
 
-  var currentImage = 1;
-  var totalImages = 3;
-
-  function increaseImage() {
-    /* Increase currentImage by 1.
-    * Resets to 1 if larger than totalImages
-    */
-    ++currentImage;
-    if(currentImage > totalImages) {
-      currentImage = 1;
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("photos");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
     }
-  }
-  function decreaseImage() {
-    /* Decrease currentImage by 1.
-    * Resets to totalImages if smaller than 1
-    */
-    --currentImage;
-    if(currentImage < 1) {
-      currentImage = totalImages;
-    }
-  }
-});
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
