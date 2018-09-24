@@ -83,3 +83,7 @@ p {
     font: Helvetica;
     text-align: center;
 }
+
+body {
+    background-color: lightblue;
+}
