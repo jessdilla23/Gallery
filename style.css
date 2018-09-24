@@ -18,8 +18,8 @@ html {
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  top: 100%;
+  position: relative;
+  top: auto;
   width: auto;
   margin-top: -15px;
   padding: 35px;
