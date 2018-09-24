@@ -19,8 +19,8 @@ html {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  width: 35%;
+  top: 100%;
+  width: auto;
   margin-top: -15px;
   padding: 35px;
   color: #FFD601;
