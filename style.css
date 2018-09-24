@@ -18,7 +18,7 @@ html {
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
+  position: relative;
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -39,7 +39,7 @@ html {
   color: #ffffff;
   font-size: 35px;
   padding: 8px 12px;
-  position: absolute;
+  position: relative;
   bottom: 8px;
   width: 100%;
   text-align: center;
@@ -50,7 +50,7 @@ html {
   color: #ffffff;
   font-size: 20px;
   padding: 8px 12px;
-  position: absolute;
+  position: relative;
   top: 0;
 }
 
