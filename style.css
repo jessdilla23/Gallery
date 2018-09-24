@@ -95,7 +95,8 @@
 
 h1 {
         font: bold "Helvetica";
-        text-align: center,
+        margin: 0 auto;
+        text-align: center;
 }
 
 p {
