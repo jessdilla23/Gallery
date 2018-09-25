@@ -4,6 +4,7 @@ I've left part of my most recent attempt in comments (i've committed this projec
 but the only JavaScript code that showed my photos 
 was this automatic slide show from W3 Schools.
 I have included it here to complete the project and made some edits
+The buttons have no function on the final project, but I have left them to show that I did make the attempt.
 */
 
 var slideIndex = 0;
