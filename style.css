@@ -15,11 +15,11 @@ html {
     display: none;
 }
 
-/* Next & previous buttons
-Since I coulnd't figure out the JavaScript to make these functional, they will serve as decoration.*/
+/* Next & previous buttons. THESE WORK NOW!!!*/
 
 .prev, .next {
   position: relative;
+  cursor: pointer;
   top: 50%;
   width: auto;
   color: #FFD601;
