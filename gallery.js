@@ -1,39 +1,60 @@
-/*
-I tried to write many different types of JavaScript to complete the slideshow function.
-I've left part of my most recent attempt in comments (i've committed this project probably near 100 times and lost a lot of work)
-but the only JavaScript code that showed my photos 
-was this automatic slide show from W3 Schools.
-I have included it here to complete the project and made some edits
-The buttons have no function on the final project, but I have left them to show that I did make the attempt.
-*/
+// wait until the HTML document is ready
+$(document).ready(function(){
 
-var slideIndex = 0;
-carousel();
+	// select all the slides (array)
+	var slides = $(".photos");
+	// set a index slide (number); where we start
+	var slideIndex = 0;
+	// what's the current slide? (indexing into an array)
+	var currentSlide = slides[slideIndex];
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("photos");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1} 
-    x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 5000); 
-    // This will change the image every 5 seconds
-}
+	// hide all slides with the hide() method
+	slides.hide();
+	// this is the equivalent to saying 
+	// $(".slide").hide();
+	// console.log("There are this many slides: " + slides.length);
 
+	// show the first one
+	slides.first().show();
 
-/*
-var slides = $(".slides");
-var slideIndex = 0;
-var currentSlide = slides[slideIndex];
+	// when a user clicks "next"... (function)
+	$(".next").click(function(){
+		// hide current slide
+		$(currentSlide).hide();
 
-$("#hide").click(function(){
-    $("p").hide();
-});
+		// increment the slideIndex (increases the slide index)
+		slideIndex++; // slideIndex = slideIndex + 1
 
-$("#show").click(function(){
-    $("p").show();
-});
-*/
+		// if the slideIndex is greater than 4... (conditional)
+		if (slideIndex > 4){
+			// reset the slideIndex to 0
+			slideIndex = 0;
+		}
+
+		// set the currentSlide as the new slideIndex (indexing into the array) among the set of slides
+		currentSlide = slides[slideIndex];
+
+		// show the currentSlide
+		$(currentSlide).show();
+	}); // close the next function
+	// when a user clicks "previous" (function)
+	$(".previous").click(function(){
+		// hide the current slide
+		$(currentSlide).hide();
+
+		// decrement the slideIndex
+		slideIndex--; // slideIndex = slideIndex - 1
+
+		// if the slideIndex is less than 0... (condition)
+		if (slideIndex < 0){
+			// reset the slideIndex to 4
+			slideIndex = 4;
+		}
+
+		// set the new slideIndex as the currentSlide
+		currentSlide = slides[slideIndex];
+		// show the currentSlide
+		$(currentSlide).show();
+
+	}); // close the previous function
+}); // close document ready function
